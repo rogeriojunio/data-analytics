@@ -1,2 +1,2 @@
-# data-analytics
- data-analytics-projects
+# business-intelligence
+business-intelligence-projects
