@@ -1,6 +1,12 @@
-# business-intelligence
+# sql-fundamentals
 
-In this repository, I share some business intelligence projects that I needed to understand 'what happened' and 'why it happened' through the data to make good decisions. The main result of these projects will be a business diagnosis and a dashboard made with Power BI, Tableau or Google Data Studio.
+In this repository, I saved some queries that I exercise basics of SQL.
 
 Here you can find:
-1. [refuge-requests-brazil](https://github.com/rogeriojunio/business-intelligence/tree/main/refuge-requests-brazil)
+1. [select-from](https://github.com/rogeriojunio/sql-fundamentals/tree/main/select-from)
+2. [agg-functions](https://github.com/rogeriojunio/sql-fundamentals/tree/main/agg-functions)
+3. [group-by](https://github.com/rogeriojunio/sql-fundamentals/tree/main/group-by)
+4. [having](https://github.com/rogeriojunio/sql-fundamentals/tree/main/having)
+5. [join](https://github.com/rogeriojunio/sql-fundamentals/tree/main/join)
+6. [subquery](https://github.com/rogeriojunio/sql-fundamentals/tree/main/subquery)
+7. [window-funtions](https://github.com/rogeriojunio/sql-fundamentals/tree/main/window-functions)
