@@ -1,0 +1,51 @@
+id_cliente,nome,sexo,endereco,data_nascimento,ativo
+1,Phoebe Schuchmacher,F,99195 Westport Street,1966-07-18,true
+2,Llewellyn Treverton,M,4 Milwaukee Trail,1939-07-21,true
+3,Eustace Edwicker,M,8472 Waubesa Park,1993-06-03,true
+4,Yvette Rawstorn,F,10223 Merchant Place,1932-02-25,false
+5,Stanton Grute,M,768 Novick Crossing,1953-04-25,true
+6,Lesley Fillan,F,31 Loftsgordon Hill,1950-11-27,false
+7,Elfreda McDougle,F,05659 Karstens Crossing,1921-01-04,false
+8,Goldina Lacer,F,0470 Rigney Pass,1960-05-05,true
+9,Norris Eckersall,M,525 Dayton Junction,1997-02-12,true
+10,Ferrell Leitch,M,3 Dayton Parkway,1987-04-28,false
+11,Inez Gladwell,F,2485 Commercial Way,1934-02-13,true
+12,Dominick Bohlsen,M,31 Bultman Place,1954-10-14,false
+13,Kinsley Walework,M,52621 Jana Lane,1978-08-28,false
+14,Georgette Jelk,F,5 Pond Alley,1973-05-02,false
+15,Tommie Shoorbrooke,M,17 Weeping Birch Way,1996-02-09,false
+16,Clayson Lattey,M,0151 Orin Junction,1978-08-24,true
+17,Caye Swatton,F,7480 7th Trail,1922-06-16,true
+18,Nealy Pavey,M,47900 Eagle Crest Center,1988-03-28,true
+19,Ely Winfred,M,9375 Hooker Way,1977-08-28,false
+20,Lionello Priddey,M,19 Paget Hill,1937-09-19,true
+21,Patrizia Whalebelly,F,97 Huxley Trail,2002-03-28,true
+22,Antons Witherspoon,M,7896 Esker Drive,1959-05-01,true
+23,Prisca Ventam,F,81160 Knutson Road,1961-03-03,false
+24,Alix Yurin,M,40610 Prairieview Place,1958-09-12,false
+25,Leo Drogan,M,7394 Charing Cross Crossing,1988-01-08,true
+26,Bert Cutsforth,M,3 Saint Paul Point,1958-12-29,true
+27,Chrysa Wegener,F,2767 Bunker Hill Terrace,1927-12-17,false
+28,Alasdair Bolzen,M,828 Westend Place,1995-01-07,false
+29,Sonnie Aspinall,M,702 North Court,1936-01-18,true
+30,Eunice Vise,F,2069 Meadow Ridge Junction,1921-01-14,true
+31,Hubert Ambage,M,7213 Iowa Way,1997-05-05,false
+32,Adlai Culbard,M,91631 Lukken Road,1928-03-26,true
+33,Robenia Beckers,F,0685 Fuller Pass,1927-01-18,false
+34,Fallon Moore,F,14028 Oakridge Avenue,1936-05-10,false
+35,Stephani Robarts,F,67 Dawn Place,1941-06-04,false
+36,Adolph Elcoux,M,822 Armistice Street,2001-08-06,false
+37,Sidonnie Hartfield,F,67838 Crescent Oaks Hill,1927-01-27,false
+38,Tad Sparway,M,5376 Onsgard Park,1986-09-03,false
+39,Dion Bidgod,M,62552 Namekagon Circle,1987-06-07,true
+40,Tan Greenier,M,1818 Fordem Parkway,1920-05-15,false
+41,Mabelle Carme,F,6817 Katie Avenue,1932-03-30,false
+42,Walker Rampage,M,14 Westend Alley,2000-09-12,true
+43,Arly Clist,F,4 Commercial Junction,1932-09-01,false
+44,Eddi Sandhill,F,96668 Fisk Lane,1983-08-30,true
+45,Conrade Lightbourn,M,34398 Southridge Terrace,1973-08-27,true
+46,Jenn Cutsforth,F,19 Mallory Circle,1974-11-04,true
+47,Danita Dessant,F,73234 Summer Ridge Court,1955-09-23,true
+48,Netti Fensome,F,2 Weeping Birch Drive,1956-02-21,false
+49,Hestia Adame,F,325 Waubesa Crossing,1977-05-04,true
+50,Mohammed Skinn,M,3 Harbort Lane,1967-04-14,false
