@@ -1,5 +1,5 @@
 # northwind-database
 
-![psql](https://w7.pngwing.com/pngs/173/36/png-transparent-postgresql-logo-computer-software-database-open-source-s-text-head-snout.png)
+![psql](https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png)
 
-<img src="[/assets/img/MarineGEO_logo.png](https://w7.pngwing.com/pngs/173/36/png-transparent-postgresql-logo-computer-software-database-open-source-s-text-head-snout.png)https://w7.pngwing.com/pngs/173/36/png-transparent-postgresql-logo-computer-software-database-open-source-s-text-head-snout.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
