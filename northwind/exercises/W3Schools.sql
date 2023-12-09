@@ -133,49 +133,10 @@ SELECT AVG(p.Price) AS media_precos
 FROM Products p;
 
 -- 25 (W3Schools): Consultar maior e menor preço de produto
-SELECT *
-FROM Products p
-WHERE p.Price = (
-    SELECT  MIN(p.Price) 
-    FROM Products p
-    )
-    OR
-    p.Price = (
-    SELECT  MAX(p.Price) 
-    FROM Products p
-    );
+SELECT MIN(p.Price) AS menor_preco, MAX(p.Price) AS maior_preco
+FROM Products p;
 
--- 26 (W3Schools): Consultar a quantidade de clientes de cada país. O resultado deverá ter o nome do país e a quantidade de clientes em ordem decrescente de número de clientes (tabela Customers)
-SELECT c.Country, COUNT(c.CustomerID) AS Quantity
-FROM Customers c
-GROUP BY c.Country
-ORDER BY COUNT(c.CustomerID) DESC;
-
--- 27 (W3Schools): Consultar a quantidade de clientes de cada país, para os países com ao menos 4 clientes. O resultado deverá ter o nome do país e a quantidade de clientes em ordem decrescente de número de clientes (tabela Customers)
-SELECT Country, COUNT(CustomerID) AS Quantity
-FROM Customers
-GROUP BY Country
-HAVING COUNT(CustomerID) >= 4
-ORDER BY COUNT(CustomerID) DESC;
-
--- 28 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que fizeram cada ordem (tabelas Employees e Orders)
-SELECT o.OrderID, e.FirstName, e.LastName
-FROM Orders o
-LEFT JOIN Employees e
-    ON o.EmployeeID = e.EmployeeID;
-
--- 29 – (W3Schools) Consultar os nomes de todos os produtos e suas respectivas categorias (tabelas Products e Categories)
-SELECT p.ProductName, c.CategoryName
-FROM Products p
-LEFT JOIN Categories c
-    ON p.CategoryID = c.CategoryID
-ORDER BY c.CategoryName;
-
--- 30 – (W3Schools) Consultar os ids das ordens com os nomes e telefones dos transportadores (tabelas Orders e Shippers)
-
--- 31 – (W3Schools) Consultar quantidade de ordens de cada um dos empregados. O resultado deve ter o nome do empregado e a quantidade de ordens. Mesmo os empregados que não tem ordens devem estar no resultado (tabelas Orders e Employees)
-
--- 32 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que tenham ‘A’ como primeira letra do nome. Utilizar subconsulta como tabela de empregados com letra A (tabelas Employees e Orders)
+-- 26 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que tenham ‘A’ como primeira letra do nome. Utilizar subconsulta como tabela de empregados com letra A (tabelas Employees e Orders)
 SELECT o.OrderID, ea.FirstName, ea.LastName
 FROM (
         SELECT e.*
@@ -185,7 +146,7 @@ FROM (
 INNER JOIN Orders o 
     ON ea.EmployeeID = o.EmployeeID;
 
--- 33 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que tenham ‘A’ como primeira letra do nome. Utilizar comando with como tabela temporária de empregados com letra A (tabelas Employees e Orders)
+-- 27 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que tenham ‘A’ como primeira letra do nome. Utilizar comando with como tabela temporária de empregados com letra A (tabelas Employees e Orders)
 WITH 
     employees_name_starts_with_a AS (
         SELECT e.*
