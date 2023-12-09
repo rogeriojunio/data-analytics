@@ -71,9 +71,7 @@ WHERE Country LIKE '_a%';
 -- 14 (W3Schools): Consultar os clientes cujos países começam com a letra A, B ou C (tabela Customers)
 SELECT CustomerName
 FROM Customers
-WHERE Country LIKE 'a%' 
-	OR Country LIKE 'b%'
-    OR Country LIKE 'c%';
+WHERE Country LIKE '[a,b,c]%';
 
 -- 15 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que fizeram cada ordem (tabelas Employees e Orders)
 SELECT o.OrderID, e.FirstName, e.LastName
