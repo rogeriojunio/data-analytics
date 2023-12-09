@@ -75,7 +75,7 @@ WHERE Country LIKE 'a%'
 	OR Country LIKE 'b%'
     OR Country LIKE 'c%';
 
---15 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que fizeram cada ordem (tabelas Employees e Orders)
+-- 15 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que fizeram cada ordem (tabelas Employees e Orders)
 SELECT o.OrderID, e.FirstName, e.LastName
 FROM Orders o
 LEFT JOIN Employees e
@@ -113,23 +113,63 @@ WHERE od.OrderID IS NULL;
 SELECT COUNT(c.CustomerID) AS Quantity
 FROM Customers c;
 
--- 21 – (W3Schools) Consultar a quantidade de países na tabela de clientes (tabela Customers)
+-- 21 (W3Schools): Consultar a quantidade de linhas com países na tabela de clientes (tabela Customers)
+SELECT DISTINCT COUNT(c.Country)
+FROM Customers c;
 
--- 22 – (W3Schools) Consultar a quantidade de países na tabela de clientes (tabela Customers)
+-- 22 (W3Schools): Consultar a quantidade de países na tabela de clientes (tabela Customers)
+SELECT COUNT(*) AS Quantity
+FROM (
+    SELECT DISTINCT c.Country
+    FROM Customers c
+    );
 
--- 23 – (W3Schools) Calcular a média dos preços dos produtos  (tabela Products)
+-- 23 (W3Schools): Calcular a média dos preços dos produtos (tabela Products)
+SELECT AVG(p.Price) AS Average
+FROM Products p;
 
--- 24 – (W3Schools) Que trem feio esse AVG(Price) hein??? Vamos mudar pra media_precos?
+-- 24 (W3Schools): Que trem feio esse AVG(Price) hein??? Vamos mudar pra media_precos?
+SELECT AVG(p.Price) AS media_precos
+FROM Products p;
 
--- 25 – (W3Schools) Consultar maior e menor preço de produto
+-- 25 (W3Schools): Consultar maior e menor preço de produto
+SELECT *
+FROM Products p
+WHERE p.Price = (
+    SELECT  MIN(p.Price) 
+    FROM Products p
+    )
+    OR
+    p.Price = (
+    SELECT  MAX(p.Price) 
+    FROM Products p
+    );
 
--- 26 – (W3Schools) Consultar a quantidade de clientes de cada país. O resultado deverá ter o nome do país e a quantidade de clientes em ordem decrescente de número de clientes (tabela Customers)
+-- 26 (W3Schools): Consultar a quantidade de clientes de cada país. O resultado deverá ter o nome do país e a quantidade de clientes em ordem decrescente de número de clientes (tabela Customers)
+SELECT c.Country, COUNT(c.CustomerID) AS Quantity
+FROM Customers c
+GROUP BY c.Country
+ORDER BY COUNT(c.CustomerID) DESC;
 
--- 27 – (W3Schools) Consultar a quantidade de clientes de cada país, para os países com ao menos 4 clientes. O resultado deverá ter o nome do país e a quantidade de clientes em ordem decrescente de número de clientes (tabela Customers)
+-- 27 (W3Schools): Consultar a quantidade de clientes de cada país, para os países com ao menos 4 clientes. O resultado deverá ter o nome do país e a quantidade de clientes em ordem decrescente de número de clientes (tabela Customers)
+SELECT Country, COUNT(CustomerID) AS Quantity
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) >= 4
+ORDER BY COUNT(CustomerID) DESC;
 
--- 28 – (W3Schools) Consultar os números das ordens, primeiros e últimos nomes dos empregados que fizeram cada ordem (tabelas Employees e Orders)
+-- 28 (W3Schools): Consultar os números das ordens, primeiros e últimos nomes dos empregados que fizeram cada ordem (tabelas Employees e Orders)
+SELECT o.OrderID, e.FirstName, e.LastName
+FROM Orders o
+LEFT JOIN Employees e
+    ON o.EmployeeID = e.EmployeeID;
 
 -- 29 – (W3Schools) Consultar os nomes de todos os produtos e suas respectivas categorias (tabelas Products e Categories)
+SELECT p.ProductName, c.CategoryName
+FROM Products p
+LEFT JOIN Categories c
+    ON p.CategoryID = c.CategoryID
+ORDER BY c.CategoryName;
 
 -- 30 – (W3Schools) Consultar os ids das ordens com os nomes e telefones dos transportadores (tabelas Orders e Shippers)
 
