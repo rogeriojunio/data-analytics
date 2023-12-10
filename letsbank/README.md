@@ -11,4 +11,5 @@ Releases:
 4. Ingestão de dados CSV
 5. Consultas para responder questões do negócio
 
+
 <img src="https://github.com/rogeriojunio/sql-fundamentals/blob/main/letsbank/ddl/letsbank-mer.png" alt="mer"/>
