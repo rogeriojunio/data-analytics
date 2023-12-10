@@ -4,4 +4,4 @@ Northwind é uma base de dados disponibilizada pela Microsoft para que estudante
 
 Neste repositório exercito os comandos de DML (data manipulation language).
 
-<img src="https://github.com/rogeriojunio/sql-fundamentals/blob/main/northwind/ddl/nothwind-mer.png" alt="mer_northwind" style="height: 700px; width:700px;"/>
+<img src="https://github.com/rogeriojunio/sql-fundamentals/blob/main/northwind/ddl/nothwind-mer.png" alt="mer_northwind" style="height: 1100px; width:1100px;"/>
