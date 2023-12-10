@@ -10,3 +10,5 @@ Releases:
 3. Criação da view `clientes_ativos`
 4. Ingestão de dados CSV
 5. Consultas para responder questões do negócio
+
+![mer](https://github.com/rogeriojunio/sql-fundamentals/blob/main/letsbank/ddl/letsbank-mer.png)
